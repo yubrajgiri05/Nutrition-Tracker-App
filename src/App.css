@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form-element{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(33, 27, 27);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  background-color: rgb(59, 113, 22);
+  width: fit-content;
+  padding: 45px 35px;
+  border: 2px solid rgb(147, 132, 132);
+  border-radius: 12px;
+}
+.primary{
+  width: fit-content;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(217, 21, 21);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#emailHelp{
+  color: white;
+}
+.text-center a{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
