@@ -22,20 +22,6 @@ const Register = () => {
     {
       event.preventDefault();
       console.log(userDetails);
-
-      fetch("http://localhost:5173/register",{
-        method:"POST",
-        body:JSON.stringgify(userDetails),
-        headers:{
-          "Content-Type":"applicatiob/json"
-        }
-      })
-      .then((response)=>{
-        console.log(response);
-      })
-      .catch((err)=>{
-        console.log(err);
-      })
     }
 
   return (
