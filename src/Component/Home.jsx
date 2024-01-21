@@ -1,30 +1,20 @@
-import { useState, useEffect } from 'react';
+import React from 'react'
+import CardDisplay from './CardDisplay'
 
 const Home = () => {
-    const url = "https://jsonplaceholder.typicode.com/users";
-    const [data, setData] = useState([]);
-  
-    const fetchInfo = () => {
-      return fetch(url)
-        .then((res) => res.json())
-        .then((d) => setData(d))
-    }
-  
-  
-    useEffect(() => {
-      fetchInfo();
-    }, []);
-  
-    return (
-      <div className="App">
-          {data.map((dataObj, index) => {
-            return (
-              <div key={index}>
-                <p>{dataObj.name}</p>
-              </div>
-            );
-          })}
-      </div>
-    );
-  }
-export default Home;
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div className="container d-flex justify-content-between">
+          <a className="navbar-brand" href="#">Navbar</a>
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"  style={{width:"fit-content"}}/>
+        </div>
+      </nav>
+
+
+       <CardDisplay/>
+    </>
+  )
+}
+
+export default Home
