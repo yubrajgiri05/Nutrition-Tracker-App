@@ -20,10 +20,10 @@ const App = () => {
       <BrowserRouter>
         <Routes>
 
-            <Route path='/' element={<Login/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/register' element={<Register/>}/>
-            <Route path='/track' element={<Home/>}/>
+            <Route path='/Nutrition-Tracker-App' element={<Login/>}/>
+            <Route path='Nutrition-Tracker-App/login' element={<Login/>}/>
+            <Route path='Nutrition-Tracker-App/register' element={<Register/>}/>
+            <Route path='Nutrition-Tracker-App/track' element={<Home/>}/>
             <Route path='*' element={<NotFount/>}/>
 
         </Routes>
